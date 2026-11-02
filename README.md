@@ -1,26 +1,15 @@
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)  
+# Cat.py — Minimal Python cat
 
-# Cat.py
+**Developer:** Hamdy Abou El Anein  
+**Contact:** info@daylightlinux.ch  
+**License:** GPL v3 (see LICENSE).
 
-## What's this software ?  
-
-This software is a traditional Cat in pure Python.
-
-
-
-## What you need to make it work :  
-
-This software is made for Python 3.  
-
-
-## How to launch this game :  
+A lightweight binary-safe Python implementation of the Unix `cat` command. It streams file contents without loading them into memory, accepts multiple filenames, reads stdin when given `-` or no arguments, and reports missing files without stopping subsequent files.
 
 ```sh
-python3 Cat.py myfile.txt
-```  
+python3 cat.py README.md
+printf 'hello' | python3 cat.py -
+python3 -m unittest discover -s tests -v
+```
 
-
-## Developer - Author  
-
-Hamdy Abou El Anein  
-
+The original implementation is preserved on [old](https://github.com/hamdyaea/Cat.py/tree/old). This is a teaching project, not a complete GNU coreutils replacement.
